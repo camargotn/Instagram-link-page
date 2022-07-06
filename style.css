@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --bg-color: white;
+  --text-color: #00082F;
+  --primary-color: #4263EB;
+  --primary-color-hover: #364FC7;
+}
+
+body.dark-blue {
+  --bg-color: #00082F;
+  --text-color: white;
+}
+
+body.pink {
+  --bg-color: #FFF0F6;
+  --text-color: #1F000B;
+  --primary-color: #D6336C;
+  --primary-color-hover: #A61E4D;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: var(--primary-color) solid 4px;
+  padding: 3.7px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #00082F;
+  margin: 24px 0 8px;
+}
+
+p {
+  font-size: 18px;
+  opacity: 0.8;
+  font-family: 'Roboto Mono', monospace;
+}
+
+ul {
+  list-style: none;
+  margin: 48px 0 0;
+}
+
+ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 53px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+
+  transition: background 400ms;
+}
+
+ul li a:hover {
+  background-color: var(--primary-color-hover);
+}
+
+footer {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 32px;
+
+  transition: opacity 400ms;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a{
+  color: var(--text-color);
+}
